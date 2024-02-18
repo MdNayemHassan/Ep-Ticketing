@@ -54,8 +54,8 @@
 <!--first section-->
  
     
-    <div class="h-[600px] bg-[url(images/banner.png)] bg-no-repeat w-[1175px] mx-auto ">
-        <section class="">
+    
+        <section id="home-screen" class="h-[600px]  bg-[url(images/banner.png)] bg-no-repeat w-[1175px] mx-auto ">
      
      <div class="pt-20">
       <h1 class="text-white text-5xl font-raleway font-extrabold text-center mb-16">End-to-ENd Travel With</h1>
@@ -64,15 +64,50 @@
      <h1 class="text-success text-5xl font-raleway font-extrabold text-center mb-8">ENA Paribahan</h1>
      <p class="text-white font-inter text-center w-[690px] mx-auto mb-8">Collect our ticket.We can asure that you can enjoy a trip safely and also enjoy the ride very well.Please click here bellow the button.</p>
      <div class="mx-auto text-center">
-      <button class="btn btn-success">Buy Ticket</button>
+      <button onclick="buy()" class="btn btn-success">Buy Ticket</button>
      </div>
         </section>
+    
+    <br>
+    <!-- hidden part -->
+<div class="">
+  <h1 class="font-raleway font-bold text-2xl text-center">Best offers for you</h1>
+  <br>
+ <div class="flex gap-x-8 ml-32">
+  <section class="flex bg-orange-400 w-[570px] rounded-xl ">
+    <div class="w-[250px]">
+        <h2 class="font-inter font-extrabold text-3xl pt-12 pl-5">15% OFF</h2>
+        <h4 class="font-bold text-xl  pl-5">on your next purchase</h4>
+        <p class=" pl-5">use by January 2024</p>
     </div>
+    <img src="images/cupon-devider.png" alt="">
+    <div class="">
+      
+      <h1 class="font-raleway font-extrabold text-3xl pt-12 pl-5">NEW15</h1>
+      <p class="pl-5">coupon code</p>
+    </div>
+  </section>
+  <section class="flex bg-pink-400 w-[570px] rounded-xl ">
+    <div class="w-[250px]">
+        <h2 class="font-inter font-extrabold text-3xl pt-12 pl-5">15% OFF</h2>
+        <h4 class="font-bold text-xl  pl-5">on your next purchase</h4>
+        <p class=" pl-5">use by January 2024</p>
+    </div>
+    <img src="images/cupon-devider.png" alt="">
+    <div class="">
+      
+      <h1 class="font-raleway font-extrabold text-3xl pt-12 pl-5">NEW15</h1>
+      <p class="pl-5">coupon code</p>
+    </div>
+</div>
 
+  </section>
+ </div>
+<br>
 <!--second section-->
-<section class="ticket-ground w-[1175px]">
+<section  class="ticket-ground w-[1175px]">
    <div>
-    <h1 class=" font-raleway text-2xl font-extrabold text-center mt-8">E.H Paribahan</h1>
+    <h1 class=" font-raleway text-2xl font-extrabold text-center mt-8">E. Paribahan</h1>
     <p class="text-center font-inter w-[650px] mx-auto text-[#030712] mt-5">Exploring the new world with us and our services.We are service you all the time trying to the best.So keep happy and enjoy the ride.</p>
    </div>
    <div class="h-[300px] bg-[url(images/Rectangle 8.png)] bg-no-repeat bg-[#FFFFFF] w-[1175px] mx-auto w-[650px] ">
@@ -88,7 +123,7 @@
              
         </div>
         <div>
-          <a class="btn bg-lime-100"><img src="images/seat-green-filled.png">8 Seats left</a>
+          <a class="btn bg-lime-100"><img src="images/seat-green-filled.png">28 Seats left</a>
          
         </div>
         
@@ -159,27 +194,80 @@
           </div>
           <br>
           <!--ticket div-->
-          <div class="flex gap-x-16 ">
+           <!-- hidden part -->
+         <section id="ticket-collect" class="hidden">
+          <div  class="flex gap-x-16 ">
             <p class="">A</p>
-            <button class="btn btn-outline btn-success px-8">A1</button>
-            <button class="btn btn-outline btn-success px-8">A2</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">A1</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">A2</button>
             <br>
             <br>
             <br>
-            <button class="btn btn-outline btn-success px-8">A3</button>
-            <button class="btn btn-outline btn-success px-8">A4</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">A3</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">A4</button>
           </div>
 
           <div class="flex gap-x-16 ">
             <p class="">B</p>
-            <button class="btn btn-outline btn-success px-8">B1</button>
-            <button class="btn btn-outline btn-success px-8">B2</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">B1</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">B2</button>
             <br>
             <br>
             <br>
-            <button class="btn btn-outline btn-success px-8">B3</button>
-            <button class="btn btn-outline btn-success px-8">B4</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">B3</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">B4</button>
           </div>
+          <div class="flex gap-x-16 ">
+            <p class="">C</p>
+            <button id="ticket" class="btn btn-outline btn-success px-8">C1</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">C2</button>
+            <br>
+            <br>
+            <br>
+            <button id="ticket" class="btn btn-outline btn-success px-8">C3</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">C4</button>
+          </div>
+          <div class="flex gap-x-16 ">
+            <p class="">D</p>
+            <button id="ticket" class="btn btn-outline btn-success px-8">D1</button>
+            <button id="ticket"  class="btn btn-outline btn-success px-8">D2</button>
+            <br>
+            <br>
+            <br>
+            <button id="ticket"  class="btn btn-outline btn-success px-8">D3</button>
+            <button id="ticket"  class="btn btn-outline btn-success px-8">D4</button>
+          </div>
+          <div class="flex gap-x-16 ">
+            <p class="">E</p>
+            <button id="ticket" class="btn btn-outline btn-success px-8">E1</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">E2</button>
+            <br>
+            <br>
+            <br>
+            <button id="ticket" class="btn btn-outline btn-success px-8">E3</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">E4</button>
+          </div>
+          <div class="flex gap-x-16 ">
+            <p class="">F</p>
+            <button id="ticket" class="btn btn-outline btn-success px-8">F1</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">F2</button>
+            <br>
+            <br>
+            <br>
+            <button id="ticket" class="btn btn-outline btn-success px-8">F3</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">F4</button>
+          </div>
+          <div class="flex gap-x-16 ">
+            <p class="">G</p>
+            <button id="ticket" class="btn btn-outline btn-success px-8">G1</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">G2</button>
+            <br>
+            <br>
+            <br>
+            <button id="ticket" class="btn btn-outline btn-success px-8">G3</button>
+            <button id="ticket" class="btn btn-outline btn-success px-8">G4</button>
+          </div>
+         </section>
        </section>
        <!--SECOND SECTION START HERE-->
        <section class="flex">
@@ -264,11 +352,8 @@
    </div>
    
 </section>
-
-<br>
-
  </main>
- 
+<script src="scripts/script.js"></script>
 </body>
 </html>
 
