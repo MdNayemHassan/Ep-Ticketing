@@ -64,13 +64,14 @@
      <h1 class="text-success text-5xl font-raleway font-extrabold text-center mb-8">ENA Paribahan</h1>
      <p class="text-white font-inter text-center w-[690px] mx-auto mb-8">Collect our ticket.We can asure that you can enjoy a trip safely and also enjoy the ride very well.Please click here bellow the button.</p>
      <div class="mx-auto text-center">
-      <button onclick="buy()" class="btn btn-success">Buy Ticket</button>
+      <button onclick="buy(),remove()" class="btn btn-success">Buy Ticket</button>
      </div>
         </section>
     
     <br>
+
     <!-- hidden part -->
-<div class="">
+<div onclick="remove()" id="ticket-coupon">
   <h1 class="font-raleway font-bold text-2xl text-center">Best offers for you</h1>
   <br>
  <div class="flex gap-x-8 ml-32">
@@ -123,7 +124,9 @@
              
         </div>
         <div>
-          <a class="btn bg-lime-100"><img src="images/seat-green-filled.png">28 Seats left</a>
+          <!-- span task -->
+          <a class="btn bg-lime-100"><img src="images/seat-green-filled.png"><div id="seat-28" class="seat btn btn-outline btn-success" onclick="toggleSeat('28')">28</div>
+            <div id="seat-count">28</div>Seats left</a>
          
         </div>
         
@@ -278,7 +281,7 @@
             <h2 class="font-bold font-raleway text-xl w-[165px] ml-4">Select your seat</h2>
             <div class="w-[400px] h-[300px] bg-[#F7F8F8] rounded-xl">
                <div class="flex gap-x-32 pl-5 pt-2">
-                <p>seat</p>
+                <p> <span onclick="elementId()" id="clicked-button">seat 0</span></p>
                 <p>class</p>
                 <p>price</p>
                </div>
@@ -354,6 +357,7 @@
 </section>
  </main>
 <script src="scripts/script.js"></script>
+
 </body>
 </html>
 
